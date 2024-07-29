@@ -11,12 +11,12 @@ ratingContainer.addEventListener('click', (e) => {
         const stars = ratingContainer.querySelectorAll('.star');
         stars.forEach((star, index) => {
             if (index <= e.target.dataset.index) {
-                star.style.color = '#ffd700';
+                star.classList.add('active');
             } else {
-                star.style.color = '#ccc';
+                star.classList.remove('active');
             }
         });
-        rating = e.target.dataset.index + 1;
+        rating = e.target.dataset.index;
         ratingText.textContent = `You rated ${rating} out of 5`;
     }
 });
@@ -31,7 +31,7 @@ submitBtn.addEventListener('click', () => {
         ratingText.textContent = 'Select a rating';
         const stars = ratingContainer.querySelectorAll('.star');
         stars.forEach((star) => {
-            star.style.color = '#ccc';
+            star.classList.remove('active');
         });
     } else {
         alert('Please write a review');
