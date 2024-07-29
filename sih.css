@@ -1,50 +1,84 @@
-#registerButton {
-    width: 400px;
-    height: 100px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /* Optional: Adding some basic styling for better visibility */
-    background-color: #28006e;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+/* Reset default margins and paddings for consistency */
+body, h1, p, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.top-right-image {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 200px; 
-    height: 200px; 
-  }
 
-  .top-left-image {
-    position: absolute;
-    top: 50;
-    left: 40;
-    width: 400px; 
-    height: 150px; 
-  }
-/* Optional: Adding some interaction */
-#registerButton:hover {
-    background-color: #0056b3;
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #D3B69C;/* Set background color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Prevent scrollbars from appearing */
 }
-#registerButton:active {
-    transform: translate(-50%, -50%) scale(0.9); /* Scales down the button on click */
-}
-#registerButton {
-    background-color: #00930a;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    animation: pulse 2s infinite;
+
+/* Image styling for logos */
+.top-left-image, .top-right-image, .center-image {
     position: absolute;
-    top: 50%;
+}
+
+/* Positioning top-left image */
+.top-left-image {
+    top: 5px;
+    left: 5px;
+    width: 350px; /* Adjust width as needed */
+    height: auto;
+}
+
+/* Positioning top-right image */
+.top-right-image {
+    top: 5px;
+    right: 5px;
+    width: 133px; /* Adjust width as needed */
+    height: 133px;
+}
+
+/* Positioning center image and animating */
+.center-image {
+    top: 43%;
     left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
+    transform: translate(-50%, -50%); /* Center horizontally and vertically */
+    width: 1650px; /* Adjust width as needed */
+    height: auto;
+}
+
+/* Keyframes for the bouncing animation */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Button styling */
+#registerButton {
+    position: absolute;
+    bottom: 195px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #007BFF; /* Blue background */
+    color: black;
+    border: none;
+    border-radius: 10px;
+    padding: 25px 75px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: background-color 0.3s ease;
+}
+
+#registerButton:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+ 
