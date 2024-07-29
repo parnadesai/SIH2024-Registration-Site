@@ -1,6 +1,3 @@
-const ratingContainer = document.querySelector('.rating-container');
-const ratingText = document.querySelector('#rating-text');
-const reviewContainer = document.querySelector('.review-container');
 const review = document.querySelector('#review');
 const submitBtn = document.querySelector('#submit-btn');
 
