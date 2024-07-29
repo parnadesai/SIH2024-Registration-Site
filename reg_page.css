@@ -1,0 +1,110 @@
+/* Overall body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #D3B69C;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-height: 100vh;
+}
+
+/* Header images positioning */
+.header-image {
+    position: absolute;
+    top: 10px;
+    width: 200px; /* Adjust the size of the images as needed */
+    height: auto;
+}
+
+.top-left-image {
+    top: 5px;
+    left: 5px;
+    width: 350px; /* Adjust width as needed */
+    height: auto;
+}
+.top-right-image {
+    top: 5px;
+    right: 5px;
+    width: 133px; /* Adjust width as needed */
+    height: 133px;
+}
+
+/* Form container styling */
+form {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    margin: 100px auto; /* Centering the form with margin and auto */
+    position: relative;
+    z-index: 1;
+}
+
+/* Form heading styling */
+h2, h3 {
+    color: #333;
+    text-align: center;
+}
+
+/* Fieldset styling */
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Label styling */
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* Input field styling */
+input[type="text"], input[type="email"], input[type="tel"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* Button styling */
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 15px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Hide member sections initially */
+.member-section {
+    display: none;
+}
+
+/* Display the first member section by default */
+#member1 {
+    display: block;
+}
