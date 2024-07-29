@@ -1,0 +1,50 @@
+#registerButton {
+    width: 400px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Optional: Adding some basic styling for better visibility */
+    background-color: #28006e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.top-right-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px; 
+    height: 200px; 
+  }
+
+  .top-left-image {
+    position: absolute;
+    top: 50;
+    left: 40;
+    width: 400px; 
+    height: 150px; 
+  }
+/* Optional: Adding some interaction */
+#registerButton:hover {
+    background-color: #0056b3;
+}
+#registerButton:active {
+    transform: translate(-50%, -50%) scale(0.9); /* Scales down the button on click */
+}
+#registerButton {
+    background-color: #00930a;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    animation: pulse 2s infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
