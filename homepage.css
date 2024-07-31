@@ -8,7 +8,7 @@ body, h1, p, button {
 /* Body styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #D3B69C;/* Set background color */
+    background-color: grey;/* Set background color */
     margin: 0;
     padding: 0;
     display: flex;
@@ -25,9 +25,9 @@ body {
 
 /* Positioning top-left image */
 .top-left-image {
-    top: 5px;
-    left: 5px;
-    width: 350px; /* Adjust width as needed */
+    top: 12px;
+    left: 12px;
+    width: 500px; /* Adjust width as needed */
     height: auto;
 }
 
@@ -35,17 +35,18 @@ body {
 .top-right-image {
     top: 5px;
     right: 5px;
-    width: 133px; /* Adjust width as needed */
-    height: 133px;
+    width: 200px; /* Adjust width as needed */
+    height: auto;
 }
 
 /* Positioning center image and animating */
 .center-image {
-    top: 43%;
+    top: 50%;
     left: 50%;
+    top-padding: 100px;
     transform: translate(-50%, -50%); /* Center horizontally and vertically */
-    width: 1650px; /* Adjust width as needed */
-    height: auto;
+    width: 1750px; /* Adjust width as needed */
+    height: 500px;
 }
 
 /* Keyframes for the bouncing animation */
@@ -64,11 +65,11 @@ body {
 /* Button styling */
 #registerButton {
     position: absolute;
-    bottom: 195px;
+    bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
     background-color: #007BFF; /* Blue background */
-    color: black;
+    color: white;
     border: none;
     border-radius: 10px;
     padding: 25px 75px;
@@ -78,7 +79,109 @@ body {
     transition: background-color 0.3s ease;
 }
 
-#registerButton:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+#aboutButton {
+    position: absolute;
+    top: 60px;
+    right: 178px;
+    transform: translateX(-50%);
+    color: black;
+    text-decoration: underline; /* Underline the text */
+    border: none;
+    background: none; /* Remove background */
+    padding: 0; /* Remove padding */
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease; /* Transition for text color change */
 }
- 
+
+#aboutButton:hover {
+    color: blue; /* Change text color on hover */
+}
+
+#scroll_news {
+    font-family: 'Book Antiqua', serif;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding: 10px 0 5px 0;
+    background: #000000;
+    background-color: #394787; /* Ensures compatibility with older browsers */
+}
+
+#scroll_news {
+    font-family: 'Book Antiqua', serif;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding: 1px 0 1px 0;
+    background-color: #394787; /* Set the background color */
+    position: absolute; /* Position the marquee absolutely */
+    top: 85px; /* Align it to the bottom of its container */
+    width: 100%; /* Make sure it takes up the full width */
+}
+
+#scroll_news a {
+    color: #FFFFFF; /* Link color */
+    text-decoration: underline; /* Underline the links */
+    font-weight: bold; /* Make the links bold */
+    transition: color 0.3s ease; /* Transition for color change on hover */
+}
+
+#scroll_news a:hover {
+    color: blue; /* Change text color on hover */
+}
+
+.newGIFImg1 {
+    vertical-align: middle; /* Align the image vertically in the middle */
+    margin-right: 5px; /* Space between the image and text */
+}
+
+
+.newGIFImg1 {
+    vertical-align: middle; /* Align the image vertically in the middle */
+    margin-right: 5px; /* Space between the image and text */
+}
+
+
+.newGIFImg1 {
+    vertical-align: middle; /* Align the image vertically in the middle */
+    margin-right: 5px; /* Space between the image and text */
+}
+
+.newGIFImg1 {
+    width: 35px; /* Adjust width as needed */
+    height: auto;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Book Antiqua', serif;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    background: grey; /* Semi-transparent background for blur effect */
+    backdrop-filter: blur(5px); /* Background blur effect */
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds a slight shadow below the header */
+    position: fixed; /* Fixes the header at the top of the page */
+    top: 0;
+    left: 0;
+}
+
+.center-heading {
+    font-family: 'Book Antiqua', serif;
+    font-weight: bold; /* Make the font bold */
+    font-size: 2.5em;
+    color: white;
+    margin: 0; /* Removes default margin */
+}
+
+.parent-container {
+    position: relative;
+    height: 100vh; /* Full height of the viewport */
+    padding-top: 80px; /* Adds padding to prevent content from being hidden behind the fixed header */
+}
