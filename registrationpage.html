@@ -199,6 +199,10 @@
             </div>
             <button type="submit">Submit</button>
         </div>
+
+        <a href="reg_complete.html" id="registerLink" style="display:none;">
+            <button id="registerButton">REGISTER FOR SIH 2024</button>
+        </a>
     </form>
 
     <script>
@@ -224,7 +228,7 @@
 
         function validateMember(memberNumber) {
             const memberForm = document.getElementById(`member${memberNumber}`);
-            const inputs = memberForm.querySelectorAll('input');
+            const inputs = memberForm.querySelectorAll('input, select');
             let valid = true;
 
             inputs.forEach(input => {
@@ -235,6 +239,32 @@
 
             if (!valid) {
                 alert(`Please fill out all required fields for Member ${memberNumber}`);
+            }
+
+            return valid;
+        }
+
+        document.getElementById('registrationForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            if (validateMentor()) {
+                document.getElementById('mentor').style.display = 'none';
+                document.getElementById('registerLink').style.display = 'block';
+            }
+        });
+
+        function validateMentor() {
+            const mentorForm = document.getElementById('mentor');
+            const inputs = mentorForm.querySelectorAll('input');
+            let valid = true;
+
+            inputs.forEach(input => {
+                if (!input.checkValidity()) {
+                    valid = false;
+                }
+            });
+
+            if (!valid) {
+                alert('Please fill out all required fields for the Mentor');
             }
 
             return valid;
