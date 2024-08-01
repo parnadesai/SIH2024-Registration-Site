@@ -8,21 +8,25 @@
 </head>
 <body>
     <!-- Header images -->
-    <img src="moe logo.png" alt="Top Left Logo" class="header-image top-left-image">
-    <img src="vit logo.jpg" alt="Top Right Logo" class="header-image top-right-image">
+    <img src="images/moe logo.png" alt="Top Left Logo" class="header-image top-left-image">
+    <img src="images/vit logo.jpg" alt="Top Right Logo" class="header-image top-right-image">
 
     <h2>Team Registration Form</h2>
     <form id="registrationForm">
 
         <!-- Member details sections -->
         <div id="member1" class="member-section">
-            <h3>Member 1 Details</h3>
+            <h3>Team Leader Details</h3>
             <div>
-                <label for="member1-name">Member 1 Name:</label>
+                <label for="member1-rollno">Roll no.:</label>
+                <input type="text" id="member1-rollno" name="member1-rollno" required>
+            </div>
+            <div>
+                <label for="member1-name">Name:</label>
                 <input type="text" id="member1-name" name="member1-name" required>
             </div>
             <div>
-                <label for="member1-branch">Member 1 Branch:</label>
+                <label for="member1-branch">Branch:</label>
                 <select id="member1-branch" name="member1-branch" required>
                     <option value="" disabled selected>Select Branch</option>
                     <option value="CSE">Computer Science Engineering</option>
@@ -33,12 +37,40 @@
                 </select>
             </div>
             <div>
-                <label for="member1-email">Member 1 Email:</label>
+                <label for="member1-year">Year:</label>
+                <select id="member1-year" name="member1-year" required>
+                     <option value="" disabled selected>Select Year</option>
+                    <option value="fe">1st Year(FE)</option>
+                    <option value="se">2nd Year(SE)</option>
+                    <option value="te">3rd Year(TE)</option>
+                    <option value="be">4th Year(BE)</option>
+                </select>
+            </div>
+            <div>
+                <label for="member1-email">Email:</label>
                 <input type="email" id="member1-email" name="member1-email" required>
             </div>
             <div>
-                <label for="member1-phone">Member 1 Phone:</label>
+                <label for="member1-phone">Phone:</label>
                 <input type="tel" id="member1-phone" name="member1-phone" required>
+            </div>
+            <div>
+                <label for="member1-domain">Domain</label>
+                <select id="member1-domain" name="member1-domain" required>
+                     <option value="" disabled selected>Select Domain</option>
+                    <option value="soft">Software</option>
+                    <option value="hard">Hardware</option>
+                    <option value="bus">Business</option>
+                </select>
+            </div>
+            <div>
+                <label for="member1-gender">Gender:</label>
+                <select id="member1-gender" name="member1-gender" required>
+                     <option value="" disabled selected>Select Gender</option>
+                    <option value="M">Male</option>
+                    <option value="F">Female</option>
+                    <option value="O">Others</option>
+                </select>
             </div>
             <button type="button" onclick="showNextMember(2)">Next Member</button>
         </div>
