@@ -3,44 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>SIH 2024 registration</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <title>SIH 2024 Registration</title>
 </head>
 <body>
-     <div class="parent container">
+    <div class="parent container">
         <header>
-            <h1 class="center-heading">SIH 2024 Registration page</h1>
-            </header>
-      </div>
-
-    <img src="images/moe logo.png" alt="moelogo" class="top-left-image">
-    <img src="images/vit logo.jpg" alt="logo" class="top-right-image">
-    <img src="images/bannersih.png" alt="logo" class="center-image">
-
-   <a href="registrationpage.html">
-    <button id="registerButton">REGISTER FOR SIH 2024</button>
-   </a>
-     <a href="">
-    <button id="acomplishmentButton">Previous SIH Accomplishments</button>
-   </a>
-   <a href="https://sih.gov.in/sih2024">
-    <button id="aboutButton1">About SIH</button>
-   </a>
-
-
-  <marquee scrolldelay="50" id="scroll_news" style="font-family:Book Antiqua; font-weight: bold; color: #FFFFFF; padding: 10px 0 5px 0; background: #000000;" bgcolor="#394787"><div onmouseover="document.getElementById('scroll_news').stop();" onmouseout="document.getElementById('scroll_news').start();">
-
-    <a href=""><img src="images/new.jpg" class="newGIFImg1">SIH 2024 to be announced soon. Stay tuned for more updates</a>|
-    <a href=""><img src="images/new.jpg" class="newGIFImg1">Login to download your College SPOC certificates</a>|
-
+            <h1 class="center-heading">SIH 2024 Registration Page</h1>
+        </header>
     </div>
-  </marquee>
 
+    <img src="images/moe logo.png" alt="MOE Logo" class="top-left-image">
+    <img src="images/vit logo.jpg" alt="VIT Logo" class="top-right-image">
 
+    <a href="">
+        <button id="accomplishmentButton">Previous SIH Accomplishments</button>
+    </a>
+    <a href="https://sih.gov.in/sih2024">
+        <button id="aboutButton">About SIH</button>
+    </a>
 
+    <marquee scrolldelay="50" id="scroll_news" style="font-family: Book Antiqua; font-weight: bold; color: #FFFFFF; padding: 10px 0 5px 0; background: #000000;" bgcolor="#394787">
+        <div onmouseover="document.getElementById('scroll_news').stop();" onmouseout="document.getElementById('scroll_news').start();">
+            <a href=""><img src="images/new.jpg" class="newGIFImg1">SIH 2024 to be announced soon. Stay tuned for more updates</a>|
+            <a href=""><img src="images/new.jpg" class="newGIFImg1">Login to download your College SPOC certificates</a>|
+        </div>
+    </marquee>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/sih-warning-slider.png" class="d-block w-100" alt="Banner 1">
+            </div>
+            <div class="carousel-item">
+                <img src="images/sih_idea.png" class="d-block w-100" alt="Banner 2">
+            </div>
+            <div class="carousel-item">
+                <img src="images/bannersih.png" class="d-block w-100" alt="Banner 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 
+    <a href="registrationpage.html">
+        <button id="registerButton">REGISTER FOR SIH 2024</button>
+    </a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
-<link rel="stylesheet" href="homepage.css">
-
