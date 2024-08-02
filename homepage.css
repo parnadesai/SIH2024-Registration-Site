@@ -8,18 +8,27 @@ body, h1, p, button {
 /* Body styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: white;/* Set background color */
+    background-color: white; /* Set background color */
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
-    overflow: hidden; /* Prevent scrollbars from appearing */
+}
+
+/* Header styling */
+@import url('https://fonts.googleapis.com/css2?family=Edu+Australia+VIC+WA+NT+Hand:wght@700&display=swap');
+
+header h1 {
+    font-family: 'Edu Australia VIC WA NT Hand', cursive;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    background: white;
 }
 
 /* Image styling for logos */
-.top-left-image, .top-right-image, .center-image {
+.top-left-image, .top-right-image {
     position: absolute;
 }
 
@@ -27,7 +36,7 @@ body {
 .top-left-image {
     top: 12px;
     left: 12px;
-    width: 500px; /* Adjust width as needed */
+    width: 450px; /* Adjust width as needed */
     height: auto;
 }
 
@@ -39,27 +48,10 @@ body {
     height: auto;
 }
 
-/* Positioning center image and animating */
-.center-image {
-    top: 50%;
-    left: 50%;
-    top-padding: 100px;
-    transform: translate(-50%, -50%); /* Center horizontally and vertically */
-    width: 1750px; /* Adjust width as needed */
-    height: 500px;
-}
-
-/* Keyframes for the bouncing animation */
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
-    }
-    40% {
-        transform: translateY(-30px);
-    }
-    60% {
-        transform: translateY(-15px);
-    }
+/* Carousel styling */
+.carousel-inner img {
+    width: 100%;
+    height: auto;
 }
 
 /* Button styling */
@@ -81,7 +73,7 @@ body {
 
 #aboutButton {
     position: absolute;
-    top: 30px;
+    top: 5px;
     right: 190px;
     transform: translateX(-50%);
     color: black;
@@ -98,25 +90,38 @@ body {
 #aboutButton:hover {
     color: blue; /* Change text color on hover */
 }
+#accomplishmentButton {
+    position: absolute;
+    top: 30px;
+    right: 100px;
+    transform: translateX(-50%);
+    color: black;
+    text-decoration: underline; /* Underline the text */
+    border: none;
+    background: none; /* Remove background */
+    padding:10px; /* Remove padding */
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease; /* Transition for text color change */
+}
 
+#accomplishmentButton:hover {
+    color: blue; /* Change text color on hover */
+}
+
+/* Marquee styling */
 #scroll_news {
     font-family: 'Book Antiqua', serif;
     font-weight: bold;
     color: #FFFFFF;
     padding: 10px 0 5px 0;
     background: #000000;
-    background-color: #394787; /* Ensures compatibility with older browsers */
-}
-
-#scroll_news {
-    font-family: 'Book Antiqua', serif;
-    font-weight: bold;
-    color: #FFFFFF;
-    padding: 1px 0 1px 0;
-    background-color: #394787; /* Set the background color */
-    position: absolute; /* Position the marquee absolutely */
-    top: 85px; /* Align it to the bottom of its container */
-    width: 100%; /* Make sure it takes up the full width */
+    background-color: rgba(128, 128, 128, 0.5); /* Ensures compatibility with older browsers */
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
 }
 
 #scroll_news a {
@@ -133,55 +138,67 @@ body {
 .newGIFImg1 {
     vertical-align: middle; /* Align the image vertically in the middle */
     margin-right: 5px; /* Space between the image and text */
-}
-
-
-.newGIFImg1 {
-    vertical-align: middle; /* Align the image vertically in the middle */
-    margin-right: 5px; /* Space between the image and text */
-}
-
-
-.newGIFImg1 {
-    vertical-align: middle; /* Align the image vertically in the middle */
-    margin-right: 5px; /* Space between the image and text */
-}
-
-.newGIFImg1 {
     width: 35px; /* Adjust width as needed */
     height: auto;
 }
 
-body, html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    font-family: 'Book Antiqua', serif;
-}
-
-header {
-    width: 100%;
-    text-align: center;
-    background:white; /* Semi-transparent background for blur effect */
-    backdrop-filter: blur(5px); /* Background blur effect */
-    padding: 20px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds a slight shadow below the header */
-    position: fixed; /* Fixes the header at the top of the page */
-    top: 0;
-    left: 0;
-}
-
-.center-heading {
-    font-family: 'Book Antiqua', serif;
-    font-weight: bold; /* Make the font bold */
-    font-size: 2.5em;
-    color: black;
-    margin: 0; /* Removes default margin */
-}
-
-.parent-container {
+/* Overview box styling */
+.overview-box {
     position: relative;
-    height: 100vh; /* Full height of the viewport */
-    padding-top: 80px; /* Adds padding to prevent content from being hidden behind the fixed header */
+    width: calc(100% - 400px); /* 200px from each side */
+    max-width: 800px; /* Max width for the box */
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.overview-box h2 {
+    margin: 0;
+    padding-right: 20px;
+    font-size: 1.5em;
+}
+
+.overview-box p {
+    margin: 0;
+    flex: 1;
+}
+
+.overview-box img {
+    width: 150px;
+    height: auto;
+    margin-left: 20px;
+}
+
+/* Footer styling */
+footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .socials {
+    display: flex;
+    align-items: center;
+}
+
+footer .contact {
+    display: flex;
+    align-items: center;
 }
