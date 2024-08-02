@@ -1,7 +1,7 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
 body {
@@ -10,113 +10,123 @@ body {
     background: url('images/sih_banner.jpg') no-repeat center center fixed;
     background-size: cover;
 }
+
+/* Header */
 header {
-     background-color: rgba(248, 248, 248, 0.5); /* Use RGBA for transparency, adjust opacity as needed */
-    padding: 5px 20px; /* Reduced padding for less height */
-    text-align: center;
     position: relative;
-    height: auto;
+    padding: 20px 0;
+    text-align: center;
+    background-color: rgba(248, 248, 248, 0.5); /* Transparent background */
 }
 
+/* Header Content */
 .header-content {
+    position: relative;
+}
+
+/* Top Images */
+.logos-right {
+    position: absolute;
+    top: 0;
+    right: 0;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    gap: 5px; /* Space between images */
+    padding: 10px; /* Space around images */
+    box-sizing: border-box;
 }
 
 .logo-left {
-    width: 125px;
-}
-
-header h1 {
-    flex-grow: 1;
-    margin: 0;
-    font-size: 2em;
-    text-align: center;
-}
-
-.logos-right {
-    display: flex;
-    gap: 10px;
+    width: 100px; /* Adjust size as needed */
+    position: absolute;
+    top: 0px;
+    left: 0px;
 }
 
 .logo-right {
-    width: 125px;
+    width: 100px; /* Adjust size as needed */
 }
 
+/* Navigation */
 nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5px;
-    margin-top: 10px;
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    gap: 20px; /* Space between elements */
 }
 
-.dropdown {
+nav .dropdown {
     position: relative;
     display: inline-block;
 }
 
-.dropbtn {
-    background-color: #f8f8f8;
-    color: black;
-    padding: 10px;
+nav .dropbtn {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
     border: none;
     cursor: pointer;
 }
 
-.dropdown-content {
+nav .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
+    min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
-.dropdown-content a {
+nav .dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
-.dropdown-content a:hover {
+nav .dropdown-content a:hover {
     background-color: #f1f1f1;
 }
 
-.dropdown:hover .dropdown-content {
+nav .dropdown:hover .dropdown-content {
     display: block;
 }
 
 nav a {
     text-decoration: none;
-    color: black;
-    padding: 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-nav a:hover {
-    background-color: #ddd;
-}
-
-.slider-padding {
-    padding: 8px;
-}
-
-.marquee {
-    background-color: black;
-    text-color: white;
-    text-decoration: bold;
-    padding: 10px;
-    text-align: center;
-    font-size: 2.5em;
-}
-
-footer {
-    background-color: black;
-    color: white;
+    color: #4CAF50;
     padding: 10px 20px;
+    font-size: 16px;
+    display: inline-block;
+}
+
+
+/* Carousel */
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 5%;
+    color: #000;
+}
+
+/* Moving Board */
+.marquee {
+    background: #f8f8f8;
+    padding: 10px;
+}
+
+/* Footer */
+footer {
+    background: url('images/sih_banner.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    padding: 10px 20px; /* Reduced padding for less height */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -126,10 +136,6 @@ footer {
     flex: 1;
 }
 
-.footer-left {
+.footer-left, .footer-right {
     text-align: left;
-}
-
-.footer-right {
-    text-align: right;
 }
