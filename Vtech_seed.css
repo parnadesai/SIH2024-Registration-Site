@@ -4,23 +4,51 @@ body {
     padding: 0;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: url('images/sih_banner.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
 header {
-    background-color: #f8f8f8;
-    padding: 10px 20px;
+     background-color: rgba(248, 248, 248, 0.5); /* Use RGBA for transparency, adjust opacity as needed */
+    padding: 5px 20px; /* Reduced padding for less height */
     text-align: center;
     position: relative;
+    height: auto;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-left {
+    width: 125px;
 }
 
 header h1 {
+    flex-grow: 1;
     margin: 0;
     font-size: 2em;
+    text-align: center;
+}
+
+.logos-right {
+    display: flex;
+    gap: 10px;
+}
+
+.logo-right {
+    width: 125px;
 }
 
 nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 5px;
     margin-top: 10px;
 }
 
@@ -72,86 +100,23 @@ nav a:hover {
     background-color: #ddd;
 }
 
-.image-container {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-.image-top-left {
-    width: 20%;
-}
-
-.top-right-images {
-    display: flex;
-    gap: 10px;
-}
-
-.image-top-right {
-    width: 48%;
-}
-
-.slideshow-container {
-    position: relative;
-    max-width: 100%;
-    margin: auto;
-    padding: 20px;
-}
-
-.mySlides {
-    display: none;
-}
-
-.banner {
-    width: 100%;
-}
-
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    background-color: rgba(0,0,0,0.5);
-}
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-}
-
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
+.slider-padding {
+    padding: 8px;
 }
 
 .marquee {
-    background-color: #f8f8f8;
+    background-color: black;
+    text-color: white;
+    text-decoration: bold;
     padding: 10px;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 2.5em;
 }
 
 footer {
     background-color: black;
     color: white;
-    padding: 20px;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
