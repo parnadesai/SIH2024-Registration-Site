@@ -46,11 +46,11 @@
 		echo "$conn->connect_error";
 		die("Connection Failed : ". $conn->connect_error);
 	} else {
-		$stmt = $conn->prepare("insert into registration(firstName, lastName, gender, email, password, number) values(?, ?, ?, ?, ?, ?)");
-		$stmt->bind_param("sssssi", $firstName, $lastName, $gender, $email, $password, $number);
+		$stmt = $conn->prepare("insert into registration(rollno, teamname, name, branch, year, email, phone, domain, gender) values(?, ?, ?, ?, ?, ?, ?, ?, ?)");
+		$stmt->bind_param("dsssisdss", $rollno , $teamname , $name, $branch, $year, $email, $phone, $domain, $gender);
 		$execval = $stmt->execute();
 		echo $execval;
-		echo "Registration successfully...";
+		echo "Team has been Registered Successfully!";
 		$stmt->close();
 		$conn->close();
 	}
