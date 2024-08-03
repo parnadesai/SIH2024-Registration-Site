@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="32b5a21d-e14b-45d0-ab05-1c52b3d41621" name="Changes" comment="upload logo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vtech_seed.css" beforeDir="false" afterPath="$PROJECT_DIR$/Vtech_seed.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vtech_seed.html" beforeDir="false" afterPath="$PROJECT_DIR$/Vtech_seed.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registrationpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/registrationpage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registrationpages.html" beforeDir="false" afterPath="$PROJECT_DIR$/registrationpages.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +50,11 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Nihar/Desktop/CODES/Pycharm&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Nihar\Desktop\CODES\SIH2024-Registration-Site\Data" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -172,6 +177,17 @@
     </task>
     <option name="localTasksCounter" value="14" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
