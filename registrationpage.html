@@ -433,6 +433,20 @@
             return valid;
         }
     </script>
+<script>
+    document.getElementById('registrationForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        if (validateMentor()) {
+            // Submit the form data to the server using AJAX or fetch
+            // Assuming the server returns a success response
+            window.location.href = 'registrationpages.html';
+        }
+    });
+
+    // Existing validation functions
+    // ...
+</script>
+
 </body>
 </html>
 
