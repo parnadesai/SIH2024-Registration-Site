@@ -8,15 +8,13 @@
 </head>
 <body>
     <div class="container">
-        <h2>Registration Successful</h2>
-        <p>Your team has been registered successfully!</p>
-        <button onclick="downloadNOC(NOC.docx)">Download NOC</button>
-        <a href="data/NOC.docx"></a>
+        <h2>Team Registration Successful!</h2>
+        <button class="dropbtn" onclick="downloadNOC()">Download NOC Certificate</button>
     </div>
 
     <script>
-        function downloadNOC(NOC.docx) {
-            window.location.href = 'Data/NOC.docx';
+        function downloadNOC() {
+            window.location.href = 'data/NOC.docx';
         }
     </script>
 </body>
