@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32b5a21d-e14b-45d0-ab05-1c52b3d41621" name="Changes" comment="connect php" />
+    <list default="true" id="32b5a21d-e14b-45d0-ab05-1c52b3d41621" name="Changes" comment="upload logo">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vtech_seed.css" beforeDir="false" afterPath="$PROJECT_DIR$/Vtech_seed.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vtech_seed.html" beforeDir="false" afterPath="$PROJECT_DIR$/Vtech_seed.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -142,7 +146,31 @@
       <option name="project" value="LOCAL" />
       <updated>1722665539267</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="connect php">
+      <option name="closed" value="true" />
+      <created>1722665744836</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1722665744837</updated>
+    </task>
+    <task id="LOCAL-00012" summary="connect php">
+      <option name="closed" value="true" />
+      <created>1722666076422</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1722666076422</updated>
+    </task>
+    <task id="LOCAL-00013" summary="upload logo">
+      <option name="closed" value="true" />
+      <created>1722667088418</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1722667088418</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -151,7 +179,8 @@
     <MESSAGE value="connectphp adding" />
     <MESSAGE value="CHANGELIST" />
     <MESSAGE value="connect php" />
-    <option name="LAST_COMMIT_MESSAGE" value="connect php" />
+    <MESSAGE value="upload logo" />
+    <option name="LAST_COMMIT_MESSAGE" value="upload logo" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
 </project>
