@@ -7,24 +7,27 @@ body {
 
 header {
     text-align: center;
-    padding: 20px;
-    background-color: #343a40;
-    color: white;
-    position: relative;
+    padding: 10px 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 header img.top-left {
     position: absolute;
-    top: 10px;
-    left: 10px;
-    width: 50px;
+    top: 12px;
+    left: 12px;
+    width: 135px;
 }
 
 header img.top-right {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 50px;
+    top: 5px;
+    right: 5px;
+    width: 200px;
 }
 
 nav.centered {
@@ -32,10 +35,11 @@ nav.centered {
     padding: 10px;
     background-color: #007bff;
     color: white;
+    margin-top: 120px; /* Ensure this is below the fixed header */
 }
 
 nav a {
-    color: white;
+    color: black;
     margin: 0 10px;
     text-decoration: none;
     font-weight: bold;
@@ -49,7 +53,7 @@ nav .dropdown {
 nav .dropbtn {
     background: none;
     border: none;
-    color: white;
+    color: black;
     font-weight: bold;
     cursor: pointer;
 }
@@ -81,22 +85,18 @@ nav .dropdown-content .dropdown {
     position: relative;
 }
 
-nav .dropdown-content .sub-dropdown {
+nav .dropdown-content .dropdown .dropdown-content {
     display: none;
-    position: absolute;
-    top: 0;
-    left: 100%;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-
-nav .dropdown .dropdown:hover .sub-dropdown {
-    display: block;
 }
 
 nav .dropdown-content .dropdown:hover .dropdown-content {
-    display: none;
+    display: block;
+    left: 100%;
+    top: 0;
+}
+
+nav .dropdown-content .dropdown:hover .sub-dropdown {
+    display: block;
 }
 
 .marquee {
@@ -104,6 +104,29 @@ nav .dropdown-content .dropdown:hover .dropdown-content {
     color: black;
     padding: 10px;
     font-weight: bold;
+}
+
+.banner {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 4em;
 }
 
 .overview-box {
@@ -116,17 +139,15 @@ nav .dropdown-content .dropdown:hover .dropdown-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 20px;
 }
 
 .overview-content {
     flex: 1;
 }
 
-.overview-image {
-    width: 200px;
-    height: auto;
-    border-radius: 10px;
-    margin-left: 20px;
+.carousel {
+    flex: 1;
 }
 
 footer {
