@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32b5a21d-e14b-45d0-ab05-1c52b3d41621" name="Changes" comment="created ze student.html file" />
+    <list default="true" id="32b5a21d-e14b-45d0-ab05-1c52b3d41621" name="Changes" comment="created ze student.html file">
+      <change afterPath="$PROJECT_DIR$/images/Faculty final.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vtech_seed.html" beforeDir="false" afterPath="$PROJECT_DIR$/Vtech_seed.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/faculty.css" beforeDir="false" afterPath="$PROJECT_DIR$/faculty.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/faculty.html" beforeDir="false" afterPath="$PROJECT_DIR$/faculty.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Faculty Deets.png" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -197,7 +204,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722690941693</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="created ze student.html file">
+      <option name="closed" value="true" />
+      <created>1722690956941</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1722690956941</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
