@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32b5a21d-e14b-45d0-ab05-1c52b3d41621" name="Changes" comment="updates to Vtech_seed.html">
+      <change afterPath="$PROJECT_DIR$/Data/kavach 2023 hackathon report.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Student.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vtech_seed.html" beforeDir="false" afterPath="$PROJECT_DIR$/Vtech_seed.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +195,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722680990606</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="updates to Vtech_seed.html">
+      <option name="closed" value="true" />
+      <created>1722688171071</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1722688171071</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
