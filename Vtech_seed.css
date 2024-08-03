@@ -9,10 +9,9 @@ header {
     position: relative;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Edu+Australia+VIC+WA+NT+Hand:wght@700&display=swap');
 
 header h1 {
-    font-family: 'Edu Australia VIC WA NT Hand', cursive;
+    font-family: Arial, sans-serif;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
     background: rgba(128, 128, 128, 0.8);
@@ -56,6 +55,7 @@ nav a {
     color:#000;
     background-color: rgba(255, 255, 255, 0.5);
     padding: 10px;
+    font-weight: bold;
 }
 
 .dropdown {
@@ -69,6 +69,7 @@ nav a {
     padding: 10px;
     border: none;
     cursor: pointer;
+    font-weight: bold;
 }
 
 .dropdown-content {
@@ -100,6 +101,7 @@ nav a {
     color: black;
     padding: 10px;
     margin: 20px 0;
+    font-weight: bold;
 }
 
 .carousel-inner img {
