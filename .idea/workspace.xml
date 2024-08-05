@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32b5a21d-e14b-45d0-ab05-1c52b3d41621" name="Changes" comment="homepage.html update">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/homepage.html" afterDir="false" />
-    </list>
+    <list default="true" id="32b5a21d-e14b-45d0-ab05-1c52b3d41621" name="Changes" comment="homepage.html update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -240,7 +237,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722842971787</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="homepage.html update">
+      <option name="closed" value="true" />
+      <created>1722866280155</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1722866280155</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
