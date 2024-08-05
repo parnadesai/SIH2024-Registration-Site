@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32b5a21d-e14b-45d0-ab05-1c52b3d41621" name="Changes" comment="created ze student.html file">
+    <list default="true" id="32b5a21d-e14b-45d0-ab05-1c52b3d41621" name="Changes" comment="homepage.html update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homepage.css" beforeDir="false" afterPath="$PROJECT_DIR$/homepage.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/homepage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reg_page.css" beforeDir="false" afterPath="$PROJECT_DIR$/reg_page.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/registrationpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/registrationpage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/registrationpages.html" beforeDir="false" afterPath="$PROJECT_DIR$/Succesful.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -236,7 +232,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722692991771</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="homepage.html update">
+      <option name="closed" value="true" />
+      <created>1722842971787</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1722842971787</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -259,7 +263,8 @@
     <MESSAGE value="upload logo" />
     <MESSAGE value="updates to Vtech_seed.html" />
     <MESSAGE value="created ze student.html file" />
-    <option name="LAST_COMMIT_MESSAGE" value="created ze student.html file" />
+    <MESSAGE value="homepage.html update" />
+    <option name="LAST_COMMIT_MESSAGE" value="homepage.html update" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
 </project>
