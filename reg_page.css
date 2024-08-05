@@ -1,11 +1,11 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
+    margin: 1px;
     background-color: grey;
 }
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
+    margin: 1px;
     background: url('images/sih_banner.jpg') no-repeat center center fixed;
     background-size: cover;
 }
@@ -18,7 +18,7 @@ body {
 
 .top-left-image {
     position: absolute;
-    top: 12px;
+    top: 20px;
     left: 12px;
     width: 500px;
     height: auto;
@@ -26,21 +26,21 @@ body {
 
 .top-right-image {
     position: absolute;
-    top: 5px;
+    top: 20px;
     right: 5px;
-    width: 200px;
+    width: 170px;
     height: auto;
 }
 
-h2 {
+h1 {
     text-align: center;
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
-    background: rgba(255, 255, 255, 0.8);
-    padding: 10px;
-    border-radius: 5px;
-    width: 20%;
+    background: rgba(255, 255, 255, 1);
+    padding: 20px;
+    top: 0px;
+    width: 100%;
     margin: 20px auto;
 }
 
@@ -48,7 +48,7 @@ form {
     max-width: 600px;
     margin: 0 auto;
     background: #fff;
-    padding: 20px;
+    padding: 30px ;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
