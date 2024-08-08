@@ -32,29 +32,14 @@ header img.top-right {
 
 /* Add your CSS styles here */
 
-.marquee {
-
-    animation: marquee 30s linear infinite;
-  
-  }
-  
-  
-  
-  @keyframes marquee {
-  
-    0% {
-  
-      transform: translateX(100%);
-  
-    }
-  
-    100% {
-  
-      transform: translateX(-100%);
-  
-    }
-  
-  }
+#scroll_news {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    padding: 10px 0 5px 0;
+    background-color: rgba(128, 128, 128, 0); /* Ensures compatibility with older browsers */
+    width: 100%;
+    position: relative;
+}
   
 nav.centered {
     text-align: center;
@@ -136,7 +121,6 @@ nav .dropdown-content .dropdown:hover .sub-dropdown {
     position: relative;
     text-align: center;
     color: white;
-    margin-top: 10px;
 }
 
 .banner img {
