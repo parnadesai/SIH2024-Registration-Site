@@ -30,6 +30,17 @@ header img.top-right {
     width: 200px;
 }
 
+/* Add your CSS styles here */
+
+#scroll_news {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    padding: 10px 0 5px 0;
+    background-color: rgba(128, 128, 128, 0); /* Ensures compatibility with older browsers */
+    width: 100%;
+    position: relative;
+}
+  
 nav.centered {
     text-align: center;
     padding: 10px;
@@ -110,7 +121,6 @@ nav .dropdown-content .dropdown:hover .sub-dropdown {
     position: relative;
     text-align: center;
     color: white;
-    margin-top: 10px;
 }
 
 .banner img {

@@ -1,0 +1,14 @@
+#aboutButton {
+    position: absolute;
+    top: 130px;
+    left: 150px;
+    transform: translateX(-50%);
+    color: black;
+    text-decoration: underline; /* Underline the text */
+    border: none;
+    background: none; /* Remove background */
+    padding:10px; /* Remove padding */
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;

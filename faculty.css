@@ -1,7 +1,21 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: top;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    padding: 10px 10px;
+}
+
 #aboutButton {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 70px;
+    left: 290px;
     transform: translateX(-50%);
     color: black;
     text-decoration: underline; /* Underline the text */
@@ -12,3 +26,9 @@
     font-weight: bold;
     cursor: pointer;
     transition: color 0.3s ease;
+}
+
+img.center {
+    max-width: 100%;
+    height: auto;
+}
