@@ -56,18 +56,18 @@ header h1 {
 
 /* Button styling */
 #registerButton {
-    position: absolute;
-    bottom: 30px;
+    position: relative;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #007BFF; /* Blue background */
+    background-color: #007BFF;
     color: white;
     border: none;
     border-radius: 10px;
+    margin-top: 20px;
     padding: 25px 75px;
     font-size: 20px;
     cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease;
 }
 
