@@ -20,7 +20,13 @@ body {
 @import url('https://fonts.googleapis.com/css2?family=Edu+Australia+VIC+WA+NT+Hand:wght@700&display=swap');
 
 header h1 {
-    font-family: 'Edu Australia VIC WA NT Hand', cursive;
+    ffont-family: "Gilroy-ExtraBold";
+    src: url("https://db.onlinewebfonts.com/t/00d5a78493aed4b11e2584ad7cceee49.eot");
+    src: url("https://db.onlinewebfonts.com/t/00d5a78493aed4b11e2584ad7cceee49.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/00d5a78493aed4b11e2584ad7cceee49.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/00d5a78493aed4b11e2584ad7cceee49.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/00d5a78493aed4b11e2584ad7cceee49.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/00d5a78493aed4b11e2584ad7cceee49.svg#Gilroy-ExtraBold")format("svg");
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     text-align: center;
