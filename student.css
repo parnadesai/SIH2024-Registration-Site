@@ -1,7 +1,8 @@
 #aboutButton {
-    position: absolute;
+    position:relative;
     top: 130px;
     left: 150px;
+    object fit:fill;
     transform: translateX(-50%);
     color: black;
     text-decoration: underline; /* Underline the text */
