@@ -49,6 +49,6 @@ $stmt->close();
 $conn->close();
 
 // Redirect to a confirmation page
-header("Location: Succesful.html");
+header("Location: Successful.html");
 exit();
 ?>
