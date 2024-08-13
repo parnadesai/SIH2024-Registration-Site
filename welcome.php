@@ -49,6 +49,6 @@ $stmt->close();
 $conn->close();
 
 // Redirect to a confirmation page
-header("Location: registrationpages.html");
+header("Location: Succesful.html");
 exit();
 ?>
