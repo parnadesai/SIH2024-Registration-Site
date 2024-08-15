@@ -1,444 +1,433 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>SIH Team Registration</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Header images -->
-    <img src="images/moe logo.png" alt="Top Left Logo" class="header-image top-left-image">
-    <img src="images/vit logo.png" alt="Top Right Logo" class="header-image top-right-image">
+    <img
+      src="images/moe logo.png"
+      alt="Top Left Logo"
+      class="header-image top-left-image"
+    />
+    <img
+      src="images/vit logo.png"
+      alt="Top Right Logo"
+      class="header-image top-right-image"
+    />
 
     <h1>Team Registration Form</h1>
 
     <form id="registrationForm" action="connect.php" method="post">
-        <form action="connect.php" method="post">
-        <!-- Member details sections -->
-        <div id="member1" class="member-section">
-            <h3>Team Leader Details</h3>
-            <div>
-                <label for="member1-rollno">Roll no.:</label>
-                <input type="text" id="member1-rollno" name="rollno" required>
-            </div>
-            <div>
-                <label for="member1-tn">Team Name(4 characters & 4 numerics mandatory):</label>
-                <input type="text" id="member1-tn" name="member1-tn" required>
-            </div>
-            <div>
-                <label for="member1-name">Name:</label>
-                <input type="text" id="member1-name" name="name" required>
-            </div>
-            <div>
-                <label for="member1-branch">Branch:</label>
-                <select id="member1-branch" name="branch" required>
-                    <option value="" disabled selected>Select Branch</option>
-                    <option value="CSE">Computer Science Engineering</option>
-                    <option value="ECE">Electronics and Communication Engineering</option>
-                    <option value="EEE">Electrical and Electronics Engineering</option>
-                    <option value="ME">Mechanical Engineering</option>
-                    <option value="CE">Civil Engineering</option>
-                </select>
-            </div>
-            <div>
-                <label for="member1-year">Year:</label>
-                <select id="member1-year" name="member1-year" required>
-                     <option value="" disabled selected>Select Year</option>
-                    <option value="fe">1st Year(FE)</option>
-                    <option value="se">2nd Year(SE)</option>
-                    <option value="te">3rd Year(TE)</option>
-                    <option value="be">4th Year(BE)</option>
-                </select>
-            </div>
-            <div>
-                <label for="member1-email">Email:</label>
-                <input type="email" id="member1-email" name="member1-email" required>
-            </div>
-            <div>
-                <label for="member1-phone">Phone:</label>
-                <input type="tel" id="member1-phone" name="member1-phone" required>
-            </div>
-            <div>
-                <label for="member1-gender">Gender:</label>
-                <select id="member1-gender" name="member1-gender" required>
-                     <option value="" disabled selected>Select Gender</option>
-                    <option value="M">Male</option>
-                    <option value="F">Female</option>
-                    <option value="O">Others</option>
-                </select>
-            </div>
-            <button type="button" onclick="showNextMember(2)">Next Member</button>
+      <!-- Member 1 -->
+      <div id="member1" class="member-section">
+        <h3>Team Leader Details</h3>
+        <div>
+          <label for="member1-rollno">Roll no.:</label>
+          <input
+            type="text"
+            id="member1-rollno"
+            name="member1-rollno"
+            required
+          />
         </div>
-
-        <div id="member2" class="member-section" style="display:none;">
-            <h3>Member 2 Details</h3>
-            <div>
-                <label for="member2-rollno">Roll no.:</label>
-                <input type="text" id="member2-rollno" name="rollno" required>
-            </div>
-            <div>
-                <label for="member2-name">Member 2 Name:</label>
-                <input type="text" id="member2-name" name="name" required>
-            </div>
-            <div>
-                <label for="member2-branch">Member 2 Branch:</label>
-                <select id="member2-branch" name="branch" required>
-                    <option value="" disabled selected>Select Branch</option>
-                    <option value="CSE">Computer Science Engineering</option>
-                    <option value="ECE">Electronics and Communication Engineering</option>
-                    <option value="EEE">Electrical and Electronics Engineering</option>
-                    <option value="ME">Mechanical Engineering</option>
-                    <option value="CE">Civil Engineering</option>
-                </select>
-            </div>
-            <div>
-                <label for="member2-year">Year:</label>
-                <select id="member2-year" name="member2-year" required>
-                     <option value="" disabled selected>Select Year</option>
-                    <option value="fe">1st Year(FE)</option>
-                    <option value="se">2nd Year(SE)</option>
-                    <option value="te">3rd Year(TE)</option>
-                    <option value="be">4th Year(BE)</option>
-                </select>
-            </div>
-            <div>
-                <label for="member2-email">Member 2 Email:</label>
-                <input type="email" id="member2-email" name="member2-email" required>
-            </div>
-            <div>
-                <label for="member2-phone">Member 2 Phone:</label>
-                <input type="tel" id="member2-phone" name="member2-phone" required>
-            </div>
-            <div>
-                <label for="member2-gender">Gender:</label>
-                <select id="member2-gender" name="member2-gender" required>
-                     <option value="" disabled selected>Select Gender</option>
-                    <option value="M">Male</option>
-                    <option value="F">Female</option>
-                    <option value="O">Others</option>
-                </select>
-            </div>
-            <button type="button" onclick="showNextMember(3)">Next Member</button>
+        <div>
+          <label for="member1-tn"
+            >Team Name (4 characters & 4 numerics mandatory):</label
+          >
+          <input type="text" id="member1-tn" name="member1-tn" required />
         </div>
-
-        <div id="member3" class="member-section" style="display:none;">
-            <h3>Member 3 Details</h3>
-            <div>
-                <label for="member3-rollno">Roll no.:</label>
-                <input type="text" id="member3-rollno" name="rollno" required>
-            </div>
-            <div>
-                <label for="member3-name">Member 3 Name:</label>
-                <input type="text" id="member3-name" name="name" required>
-            </div>
-            <div>
-                <label for="member3-branch">Member 3 Branch:</label>
-                <select id="member3-branch" name="member3-branch" required>
-                    <option value="" disabled selected>Select Branch</option>
-                    <option value="CSE">Computer Science Engineering</option>
-                    <option value="ECE">Electronics and Communication Engineering</option>
-                    <option value="EEE">Electrical and Electronics Engineering</option>
-                    <option value="ME">Mechanical Engineering</option>
-                    <option value="CE">Civil Engineering</option>
-                </select>
-            </div>
-            <div>
-                <label for="member3-year">Year:</label>
-                <select id="member3-year" name="member3-year" required>
-                     <option value="" disabled selected>Select Year</option>
-                    <option value="fe">1st Year(FE)</option>
-                    <option value="se">2nd Year(SE)</option>
-                    <option value="te">3rd Year(TE)</option>
-                    <option value="be">4th Year(BE)</option>
-                </select>
-            </div>
-            <div>
-                <label for="member3-email">Member 3 Email:</label>
-                <input type="email" id="member3-email" name="member3-email" required>
-            </div>
-            <div>
-                <label for="member3-phone">Member 3 Phone:</label>
-                <input type="tel" id="member3-phone" name="member3-phone" required>
-            </div>
-            <div>
-                <label for="member3-gender">Gender:</label>
-                <select id="member3-gender" name="member3-gender" required>
-                     <option value="" disabled selected>Select Gender</option>
-                    <option value="M">Male</option>
-                    <option value="F">Female</option>
-                    <option value="O">Others</option>
-                </select>
-            </div>
-            <button type="button" onclick="showNextMember(4)">Next Member</button>
+        <div>
+          <label for="member1-name">Name:</label>
+          <input type="text" id="member1-name" name="member1-name" required />
         </div>
-
-        <div id="member4" class="member-section" style="display:none;">
-            <h3>Member 4 Details</h3>
-            <div>
-                <label for="member4-rollno">Roll no.:</label>
-                <input type="text" id="member4-rollno" name="rollno" required>
-            </div>
-            <div>
-                <label for="member4-name">Member 4 Name:</label>
-                <input type="text" id="member4-name" name="name" required>
-            </div>
-            <div>
-                <label for="member4-branch">Member 4 Branch:</label>
-                <select id="member4-branch" name="member4-branch" required>
-                    <option value="" disabled selected>Select Branch</option>
-                    <option value="CSE">Computer Science Engineering</option>
-                    <option value="ECE">Electronics and Communication Engineering</option>
-                    <option value="EEE">Electrical and Electronics Engineering</option>
-                    <option value="ME">Mechanical Engineering</option>
-                    <option value="CE">Civil Engineering</option>
-                </select>
-            </div>
-            <div>
-                <label for="member4-year">Year:</label>
-                <select id="member4-year" name="member4-year" required>
-                     <option value="" disabled selected>Select Year</option>
-                    <option value="fe">1st Year(FE)</option>
-                    <option value="se">2nd Year(SE)</option>
-                    <option value="te">3rd Year(TE)</option>
-                    <option value="be">4th Year(BE)</option>
-                </select>
-            </div>
-            <div>
-                <label for="member4-email">Member 4 Email:</label>
-                <input type="email" id="member4-email" name="member4-email" required>
-            </div>
-            <div>
-                <label for="member4-phone">Member 4 Phone:</label>
-                <input type="tel" id="member4-phone" name="member4-phone" required>
-            </div>
-            <div>
-                <label for="member4-gender">Gender:</label>
-                <select id="member4-gender" name="member4-gender" required>
-                     <option value="" disabled selected>Select Gender</option>
-                    <option value="M">Male</option>
-                    <option value="F">Female</option>
-                    <option value="O">Others</option>
-                </select>
-            </div>
-            <button type="button" onclick="showNextMember(5)">Next Member</button>
+        <div>
+          <label for="member1-branch">Branch:</label>
+          <select id="member1-branch" name="member1-branch" required>
+            <option value="" disabled selected>Select Branch</option>
+            <option value="CSE">Computer Science Engineering</option>
+            <option value="ECE">
+              Electronics and Communication Engineering
+            </option>
+            <option value="EEE">Electrical and Electronics Engineering</option>
+            <option value="ME">Mechanical Engineering</option>
+            <option value="CE">Civil Engineering</option>
+          </select>
         </div>
-
-        <div id="member5" class="member-section" style="display:none;">
-            <h3>Member 5 Details</h3>
-            <div>
-                <label for="member5-rollno">Roll no.:</label>
-                <input type="text" id="member5-rollno" name="rollno" required>
-            </div>
-            <div>
-                <label for="member5-name">Member 5 Name:</label>
-                <input type="text" id="member5-name" name="name" required>
-            </div>
-            <div>
-                <label for="member5-branch">Member 5 Branch:</label>
-                <select id="member5-branch" name="member5-branch" required>
-                    <option value="" disabled selected>Select Branch</option>
-                    <option value="CSE">Computer Science Engineering</option>
-                    <option value="ECE">Electronics and Communication Engineering</option>
-                    <option value="EEE">Electrical and Electronics Engineering</option>
-                    <option value="ME">Mechanical Engineering</option>
-                    <option value="CE">Civil Engineering</option>
-                </select>
-            </div>
-            <div>
-                <label for="member5-year">Year:</label>
-                <select id="member5-year" name="member5-year" required>
-                     <option value="" disabled selected>Select Year</option>
-                    <option value="fe">1st Year(FE)</option>
-                    <option value="se">2nd Year(SE)</option>
-                    <option value="te">3rd Year(TE)</option>
-                    <option value="be">4th Year(BE)</option>
-                </select>
-            </div>
-            <div>
-                <label for="member5-email">Member 5 Email:</label>
-                <input type="email" id="member5-email" name="member5-email" required>
-            </div>
-            <div>
-                <label for="member5-phone">Member 5 Phone:</label>
-                <input type="tel" id="member5-phone" name="member5-phone" required>
-            </div>
-            <div>
-                <label for="member5-gender">Gender:</label>
-                <select id="member5-gender" name="member5-gender" required>
-                     <option value="" disabled selected>Select Gender</option>
-                    <option value="M">Male</option>
-                    <option value="F">Female</option>
-                    <option value="O">Others</option>
-                </select>
-            </div>
-            <button type="button" onclick="showNextMember(6)">Next Member</button>
+        <div>
+          <label for="member1-year">Year:</label>
+          <select id="member1-year" name="member1-year" required>
+            <option value="" disabled selected>Select Year</option>
+            <option value="fe">1st Year (FE)</option>
+            <option value="se">2nd Year (SE)</option>
+            <option value="te">3rd Year (TE)</option>
+            <option value="be">4th Year (BE)</option>
+          </select>
         </div>
-
-        <div id="member6" class="member-section" style="display:none;">
-            <h3>Member 6 Details</h3>
-            <div>
-                <label for="member6-rollno">Roll no.:</label>
-                <input type="text" id="member6-rollno" name="rollno" required>
-            </div>
-            <div>
-                <label for="member6-name">Member 6 Name:</label>
-                <input type="text" id="member6-name" name="name" required>
-            </div>
-            <div>
-                <label for="member6-branch">Member 6 Branch:</label>
-                <select id="member6-branch" name="member6-branch" required>
-                    <option value="" disabled selected>Select Branch</option>
-                    <option value="CSE">Computer Science Engineering</option>
-                    <option value="ECE">Electronics and Communication Engineering</option>
-                    <option value="EEE">Electrical and Electronics Engineering</option>
-                    <option value="ME">Mechanical Engineering</option>
-                    <option value="CE">Civil Engineering</option>
-                </select>
-            </div>
-            <div>
-                <label for="member6-year">Year:</label>
-                <select id="member6-year" name="member6-year" required>
-                     <option value="" disabled selected>Select Year</option>
-                    <option value="fe">1st Year(FE)</option>
-                    <option value="se">2nd Year(SE)</option>
-                    <option value="te">3rd Year(TE)</option>
-                    <option value="be">4th Year(BE)</option>
-                </select>
-            </div>
-            <div>
-                <label for="member6-email">Member 6 Email:</label>
-                <input type="email" id="member6-email" name="member6-email">
-            </div>
-            <div>
-                <label for="member6-phone">Member 6 Phone:</label>
-                <input type="tel" id="member6-phone" name="member6-phone">
-            </div>
-            <div>
-                <label for="member6-gender">Gender:</label>
-                <select id="member6-gender" name="member6-gender">
-                     <option value="" disabled selected>Select Gender</option>
-                    <option value="M">Male</option>
-                    <option value="F">Female</option>
-                    <option value="O">Others</option>
-                </select>
-            </div>
-            <button type="button" onclick="showMentor()">Next: Mentor</button>
+        <div>
+          <label for="member1-email">Email:</label>
+          <input
+            type="email"
+            id="member1-email"
+            name="member1-email"
+            required
+          />
         </div>
-
-        <div id="mentor" class="member-section" style="display:none;">
-            <h3>Mentor Details</h3>
-            <div>
-                <label for="mentor-name">Mentor Name:</label>
-                <input type="text" id="mentor-name" name="mentor-name" required>
-            </div>
-            <div>
-                <label for="mentor-f-gender">Field:</label>
-                <select id="mentor-f-gender" name="mentor-f-gender" required>
-                     <option value="" disabled selected>Select Gender</option>
-                    <option value="I">Industry</option>
-                    <option value="A">Academic</option>
-                </select>
-            </div>
-            <div>
-                <label for="mentor-email">Mentor Email:</label>
-                <input type="email" id="mentor-email" name="mentor-email" required>
-            </div>
-            <div>
-                <label for="mentor-phone">Mentor Phone:</label>
-                <input type="tel" id="mentor-phone" name="mentor-phone" required>
-            </div>
-            <button type="submit">Submit</button>
+        <div>
+          <label for="member1-phone">Phone:</label>
+          <input type="tel" id="member1-phone" name="member1-phone" required />
         </div>
+        <div>
+          <label for="member1-gender">Gender:</label>
+          <select id="member1-gender" name="member1-gender" required>
+            <option value="" disabled selected>Select Gender</option>
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+            <option value="O">Others</option>
+          </select>
+        </div>
+      </div>
 
-        <a href="reg_complete.html" id="registerLink" style="display:none;">
-            <button id="registerButton">REGISTER FOR SIH 2024</button>
-        </a>
-        </form>
+      <!-- Member 2 -->
+      <div id="member2" class="member-section">
+        <h3>Member 2 Details</h3>
+        <div>
+          <label for="member2-rollno">Roll no.:</label>
+          <input
+            type="text"
+            id="member2-rollno"
+            name="member2-rollno"
+            required
+          />
+        </div>
+        <div>
+          <label for="member2-name">Name:</label>
+          <input type="text" id="member2-name" name="member2-name" required />
+        </div>
+        <div>
+          <label for="member2-branch">Branch:</label>
+          <select id="member2-branch" name="member2-branch" required>
+            <option value="" disabled selected>Select Branch</option>
+            <option value="CSE">Computer Science Engineering</option>
+            <option value="ECE">
+              Electronics and Communication Engineering
+            </option>
+            <option value="EEE">Electrical and Electronics Engineering</option>
+            <option value="ME">Mechanical Engineering</option>
+            <option value="CE">Civil Engineering</option>
+          </select>
+        </div>
+        <div>
+          <label for="member2-year">Year:</label>
+          <select id="member2-year" name="member2-year" required>
+            <option value="" disabled selected>Select Year</option>
+            <option value="fe">1st Year (FE)</option>
+            <option value="se">2nd Year (SE)</option>
+            <option value="te">3rd Year (TE)</option>
+            <option value="be">4th Year (BE)</option>
+          </select>
+        </div>
+        <div>
+          <label for="member2-email">Email:</label>
+          <input
+            type="email"
+            id="member2-email"
+            name="member2-email"
+            required
+          />
+        </div>
+        <div>
+          <label for="member2-phone">Phone:</label>
+          <input type="tel" id="member2-phone" name="member2-phone" required />
+        </div>
+        <div>
+          <label for="member2-gender">Gender:</label>
+          <select id="member2-gender" name="member2-gender" required>
+            <option value="" disabled selected>Select Gender</option>
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+            <option value="O">Others</option>
+          </select>
+        </div>
+      </div>
+      <!-- Member 3 -->
+      <div id="member3" class="member-section">
+        <h3>Member 3 Details</h3>
+        <div>
+          <label for="member3-rollno">Roll no.:</label>
+          <input
+            type="text"
+            id="member3-rollno"
+            name="member3-rollno"
+            required
+          />
+        </div>
+        <div>
+          <label for="member3-name">Name:</label>
+          <input type="text" id="member3-name" name="member3-name" required />
+        </div>
+        <div>
+          <label for="member3-branch">Branch:</label>
+          <select id="member3-branch" name="member3-branch" required>
+            <option value="" disabled selected>Select Branch</option>
+            <option value="CSE">Computer Science Engineering</option>
+            <option value="ECE">
+              Electronics and Communication Engineering
+            </option>
+            <option value="EEE">Electrical and Electronics Engineering</option>
+            <option value="ME">Mechanical Engineering</option>
+            <option value="CE">Civil Engineering</option>
+          </select>
+        </div>
+        <div>
+          <label for="member3-year">Year:</label>
+          <select id="member3-year" name="member3-year" required>
+            <option value="" disabled selected>Select Year</option>
+            <option value="fe">1st Year (FE)</option>
+            <option value="se">2nd Year (SE)</option>
+            <option value="te">3rd Year (TE)</option>
+            <option value="be">4th Year (BE)</option>
+          </select>
+        </div>
+        <div>
+          <label for="member3-email">Email:</label>
+          <input
+            type="email"
+            id="member3-email"
+            name="member3-email"
+            required
+          />
+        </div>
+        <div>
+          <label for="member3-phone">Phone:</label>
+          <input type="tel" id="member3-phone" name="member3-phone" required />
+        </div>
+        <div>
+          <label for="member3-gender">Gender:</label>
+          <select id="member3-gender" name="member3-gender" required>
+            <option value="" disabled selected>Select Gender</option>
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+            <option value="O">Others</option>
+          </select>
+        </div>
+      </div>
+      <!-- Member 4 -->
+      <div id="member4" class="member-section">
+        <h3>Member 4 Details</h3>
+        <div>
+          <label for="member4-rollno">Roll no.:</label>
+          <input
+            type="text"
+            id="member4-rollno"
+            name="member4-rollno"
+            required
+          />
+        </div>
+        <div>
+          <label for="member4-name">Name:</label>
+          <input type="text" id="member4-name" name="member4-name" required />
+        </div>
+        <div>
+          <label for="member4-branch">Branch:</label>
+          <select id="member4-branch" name="member4-branch" required>
+            <option value="" disabled selected>Select Branch</option>
+            <option value="CSE">Computer Science Engineering</option>
+            <option value="ECE">
+              Electronics and Communication Engineering
+            </option>
+            <option value="EEE">Electrical and Electronics Engineering</option>
+            <option value="ME">Mechanical Engineering</option>
+            <option value="CE">Civil Engineering</option>
+          </select>
+        </div>
+        <div>
+          <label for="member4-year">Year:</label>
+          <select id="member4-year" name="member4-year" required>
+            <option value="" disabled selected>Select Year</option>
+            <option value="fe">1st Year (FE)</option>
+            <option value="se">2nd Year (SE)</option>
+            <option value="te">3rd Year (TE)</option>
+            <option value="be">4th Year (BE)</option>
+          </select>
+        </div>
+        <div>
+          <label for="member4-email">Email:</label>
+          <input
+            type="email"
+            id="member4-email"
+            name="member4-email"
+            required
+          />
+        </div>
+        <div>
+          <label for="member4-phone">Phone:</label>
+          <input type="tel" id="member4-phone" name="member4-phone" required />
+        </div>
+        <div>
+          <label for="member4-gender">Gender:</label>
+          <select id="member4-gender" name="member4-gender" required>
+            <option value="" disabled selected>Select Gender</option>
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+            <option value="O">Others</option>
+          </select>
+        </div>
+      </div>
+      <!--Member 5-->
+      <div id="member5" class="member-section">
+        <h3>Member 5 Details</h3>
+        <div>
+          <label for="member5-rollno">Roll no.:</label>
+          <input
+            type="text"
+            id="member5-rollno"
+            name="member5-rollno"
+            required
+          />
+        </div>
+        <div>
+          <label for="member5-name">Name:</label>
+          <input type="text" id="member5-name" name="member5-name" required />
+        </div>
+        <div>
+          <label for="member5-branch">Branch:</label>
+          <select id="member5-branch" name="member5-branch" required>
+            <option value="" disabled selected>Select Branch</option>
+            <option value="CSE">Computer Science Engineering</option>
+            <option value="ECE">
+              Electronics and Communication Engineering
+            </option>
+            <option value="EEE">Electrical and Electronics Engineering</option>
+            <option value="ME">Mechanical Engineering</option>
+            <option value="CE">Civil Engineering</option>
+          </select>
+        </div>
+        <div>
+          <label for="member5-year">Year:</label>
+          <select id="member5-year" name="member5-year" required>
+            <option value="" disabled selected>Select Year</option>
+            <option value="fe">1st Year (FE)</option>
+            <option value="se">2nd Year (SE)</option>
+            <option value="te">3rd Year (TE)</option>
+            <option value="be">4th Year (BE)</option>
+          </select>
+        </div>
+        <div>
+          <label for="member5-email">Email:</label>
+          <input
+            type="email"
+            id="member5-email"
+            name="member5-email"
+            required
+          />
+        </div>
+        <div>
+          <label for="member5-phone">Phone:</label>
+          <input type="tel" id="member5-phone" name="member5-phone" required />
+        </div>
+        <div>
+          <label for="member5-gender">Gender:</label>
+          <select id="member5-gender" name="member5-gender" required>
+            <option value="" disabled selected>Select Gender</option>
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+            <option value="O">Others</option>
+          </select>
+        </div>
+      </div>
+      <!--Member 6-->
+      <div id="member6" class="member-section">
+        <h3>Member 6 Details</h3>
+        <div>
+          <label for="member6-rollno">Roll no.:</label>
+          <input
+            type="text"
+            id="member6-rollno"
+            name="member6-rollno"
+            required
+          />
+        </div>
+        <div>
+          <label for="member6-name">Name:</label>
+          <input type="text" id="member6-name" name="member6-name" required />
+        </div>
+        <div>
+          <label for="member6-branch">Branch:</label>
+          <select id="member6-branch" name="member6-branch" required>
+            <option value="" disabled selected>Select Branch</option>
+            <option value="CSE">Computer Science Engineering</option>
+            <option value="ECE">
+              Electronics and Communication Engineering
+            </option>
+            <option value="EEE">Electrical and Electronics Engineering</option>
+            <option value="ME">Mechanical Engineering</option>
+            <option value="CE">Civil Engineering</option>
+          </select>
+        </div>
+        <div>
+          <label for="member6-year">Year:</label>
+          <select id="member6-year" name="member6-year" required>
+            <option value="" disabled selected>Select Year</option>
+            <option value="fe">1st Year (FE)</option>
+            <option value="se">2nd Year (SE)</option>
+            <option value="te">3rd Year (TE)</option>
+            <option value="be">4th Year (BE)</option>
+          </select>
+        </div>
+        <div>
+          <label for="member6-email">Email:</label>
+          <input
+            type="email"
+            id="member6-email"
+            name="member6-email"
+            required
+          />
+        </div>
+        <div>
+          <label for="member6-phone">Phone:</label>
+          <input type="tel" id="member6-phone" name="member6-phone" required />
+        </div>
+        <div>
+          <label for="member6-gender">Gender:</label>
+          <select id="member6-gender" name="member6-gender" required>
+            <option value="" disabled selected>Select Gender</option>
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+            <option value="O">Others</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Mentor Details -->
+      <div id="mentor" class="member-section">
+        <h3>Mentor Details</h3>
+        <div>
+          <label for="mentor-name">Mentor Name:</label>
+          <input type="text" id="mentor-name" name="mentor-name" required />
+        </div>
+        <div>
+          <label for="mentor-field">Field:</label>
+          <select id="mentor-field" name="mentor-field" required>
+            <option value="" disabled selected>Select Field</option>
+            <option value="I">Industry</option>
+            <option value="A">Academic</option>
+          </select>
+        </div>
+        <div>
+          <label for="mentor-email">Mentor Email:</label>
+          <input type="email" id="mentor-email" name="mentor-email" required />
+        </div>
+        <div>
+          <label for="mentor-phone">Mentor Phone:</label>
+          <input type="tel" id="mentor-phone" name="mentor-phone" required />
+        </div>
+      </div>
+
+      <button type="submit">Submit</button>
     </form>
-
-    <script>
-        function showTeamName(teamname) {
-        }
-        function showNextMember(memberNumber) {
-            const currentMember = document.getElementById(`member${memberNumber - 1}`);
-            const nextMember = document.getElementById(`member${memberNumber}`);
-
-            if (validateMember(memberNumber - 1)) {
-                currentMember.style.display = 'none';
-                nextMember.style.display = 'block';
-            }
-        }
-
-        function showMentor() {
-            const member6 = document.getElementById('member6');
-            const mentor = document.getElementById('mentor');
-
-            if (validateMember(6)) {
-                member6.style.display = 'none';
-                mentor.style.display = 'block';
-            }
-        }
-
-        function validateMember(memberNumber) {
-            const memberForm = document.getElementById(`member${memberNumber}`);
-            const inputs = memberForm.querySelectorAll('input, select');
-            let valid = true;
-
-            inputs.forEach(input => {
-                if (!input.checkValidity()) {
-                    valid = false;
-                }
-            });
-
-            if (!valid) {
-                alert(`Please fill out all required fields for Member ${memberNumber}`);
-            }
-
-            return valid;
-        }
-
-        document.getElementById('registrationForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            if (validateMentor()) {
-                document.getElementById('mentor').style.display = 'none';
-                document.getElementById('registerLink').style.display = 'block';
-            }
-        });
-
-        function validateMentor() {
-            const mentorForm = document.getElementById('mentor');
-            const inputs = mentorForm.querySelectorAll('input');
-            let valid = true;
-
-            inputs.forEach(input => {
-                if (!input.checkValidity()) {
-                    valid = false;
-                }
-            });
-
-            if (!valid) {
-                alert('Please fill out all required fields for the Mentor');
-            }
-
-            return valid;
-        }
-    </script>
-<script>
-    document.getElementById('registrationForm').addEventListener('submit', function(event) {
-        event.preventDefault();
-        if (validateMentor()) {
-            // Submit the form data to the server using AJAX or fetch
-            // Assuming the server returns a success response
-            window.location.href = 'registrationpages.html';
-        }
-    });
-
-    // Existing validation functions
-    // ...
-</script>
-
-</body>
+  </body>
 </html>
-
-<link rel="stylesheet" href="reg_page.css">
