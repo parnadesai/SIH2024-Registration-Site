@@ -79,7 +79,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 
     // Redirect after successful submission
-    header("Location: Succesful.html");
+    header("Location: Successful.html");
     exit();
 }
 
