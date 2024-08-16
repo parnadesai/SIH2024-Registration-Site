@@ -5,6 +5,29 @@
     width: 170px;
     height: auto;
   }
+
+.back-button-container {
+  position: absolute;
+  top: 35px;
+  left: 100px;
+  z-index: 100;
+}
+
+.back-button {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+
   .faculty-container {
       max-width: 90%;
       margin: 0px auto;
