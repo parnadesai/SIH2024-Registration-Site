@@ -47,10 +47,11 @@ body {
     text-align: center;
     margin-top: 50px;
   }
-  .googleForm {
-  /*margin-left: auto;/*
-  /*margin-right: auto;*/
-  text-align: center;
+  #googleForm {
+     width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
 }
   .member-section {
     background-color: #f7f7f7;
